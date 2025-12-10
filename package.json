@@ -1,0 +1,39 @@
+{
+  "name": "cakehouse-marketing",
+  "version": "1.0.0",
+  "description": "Compliant SMS & Email Marketing Platform for Cannabis Dispensaries",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "db:migrate": "node src/db/migrate.js",
+    "db:seed": "node src/db/seed.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "telnyx": "^2.1.0",
+    "bullmq": "^5.1.0",
+    "ioredis": "^5.3.2",
+    "@aws-sdk/client-ses": "^3.470.0",
+    "dotenv": "^16.3.1",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.1.5",
+    "uuid": "^9.0.1",
+    "dayjs": "^1.11.10",
+    "crypto-js": "^4.2.0",
+    "winston": "^3.11.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcrypt": "^5.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
